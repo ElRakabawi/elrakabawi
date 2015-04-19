@@ -1,0 +1,6 @@
+div#mapme {
+  background-image: url(../img/cairo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

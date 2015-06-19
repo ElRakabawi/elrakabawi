@@ -11,14 +11,14 @@
 
 	0. Imports and includes.
 	1. General.
-	2. Webfont icons. (http://www.s-ings.com)
-  3. Landing screen
-	4. Sidenav
-	5. Portfolio
-	6. About 
-	7. Media Queries (Tablet)
-	8. Media Queries (Smartphone)
-	9. Media Queries (Massive Screens)
+  2. Landing screen
+	3. Sidenav
+	4. Portfolio
+	5. About 
+	6. Media Queries (Tablet)
+	7. Media Queries (Smartphone)
+	8. Media Queries (Massive Screens)
+  9. Webfont icons. (http://www.s-ings.com)
 */
 
 /* 
@@ -60,6 +60,11 @@ h5 {
   color: rgba(2,2,2,0.2);
   font-family: 'Ubuntu';
   font-size: 18px;
+  text-align: center;
+}
+h1 {
+  color: rgba(2,2,2,0.8);
+  font-family: 'Ubuntu';
   text-align: center;
 }
 h1.mainlg {
@@ -110,7 +115,7 @@ p.egymkr > span {
 }
 /* 
 -------------------------------------------------
-  4. Sidenav ()
+  3. Sidenav ()
 ------------------------------------------------- 
 */
 
@@ -255,7 +260,69 @@ span.label {
 
 /* 
 -------------------------------------------------
-  6. About
+  4. Portfolio
+------------------------------------------------- 
+*/
+h1.mini {
+	color: rgba(2,2,2,0.2);
+	-moz-transition: color ease-in-out 0.7s;
+  -webkit-transition: color ease-in-out 0.7s;
+  -o-transition: color ease-in-out 0.7s;
+  transition: color ease-in-out 0.7s;
+}
+h1.gree {
+	color: rgba(2,2,2,0.7);
+}
+h1.mini:hover {
+	color: #222;
+}
+.proj_img {
+    width:300px;
+    transition: transform 0.5s;
+}
+.overlay {
+		font-size: 16px;
+    position: absolute;
+    opacity:0;
+    height: 100%;
+    width:100%;
+    padding-top: 80px;
+    background-color: rgba(255, 255, 255, 0.7);
+    -moz-transition: opacity ease-in-out 0.5s;
+  	-webkit-transition: opacity ease-in-out 0.5s;
+  	-o-transition: opacity ease-in-out 0.5s;
+		transition: opacity ease-in-out 0.5s;
+    z-index: 1;
+    text-shadow:0 0 1px #fff;
+            }	
+a:hover > .overlay {
+    opacity:1;
+            }
+
+a:hover > .img {
+		-webkit-transform: scale(1,2);
+    transform: scale(1,2);
+            }		
+div.cont {
+		flex: 1 0 200px;
+    font-size:10px;
+    color:black;
+    display:inline-block;
+    margin-left: 50px;
+    position: relative;
+    overflow:hidden;
+    box-sizing:border-box;
+			}
+div.wrapper {
+		margin-left: 150px;
+	  margin-top: 60px;
+			}
+			
+
+
+/* 
+-------------------------------------------------
+  5. About
 ------------------------------------------------- 
 */
 .smfun {
@@ -267,11 +334,6 @@ span.label {
   position: absolute;
   width: 100%;
   height: 100%;
-}
-
-div .conttop{
-
-
 }
 
 

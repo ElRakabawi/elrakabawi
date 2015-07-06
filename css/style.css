@@ -312,7 +312,8 @@ div.cont {
     position: relative;
     overflow:hidden;
     box-sizing:border-box;
-			}
+    max-height: 235px;
+}
 div.wrapper {
 		margin-left: 150px;
 	  margin-top: 60px;

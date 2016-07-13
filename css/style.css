@@ -11,14 +11,14 @@
 
 	0. Imports and includes.
 	1. General.
-  2. Landing screen
+	2. Landing screen
 	3. Sidenav
 	4. Portfolio
 	5. About 
 	6. Media Queries (Tablet)
 	7. Media Queries (Smartphone)
 	8. Media Queries (Massive Screens)
-  9. Webfont icons. (http://www.s-ings.com)
+	9. Webfont icons. (http://www.s-ings.com)
 */
 
 /* 
@@ -39,7 +39,7 @@
 
 * { margin: 0; padding: 0; }
 body {
-  background-repeat: no-repeat;
+  background-repeat: initial;
   background-size: cover;
 }
 div.hwrapper {

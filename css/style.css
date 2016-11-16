@@ -65,6 +65,13 @@ h1.main {
   font-size: 1.5em;
   text-align: center;
 }
+h1.aka {
+    color: rgba(255,255,252,0.5);
+    font-family: 'Raleway';
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
 h5 { 
   color: rgba(2,2,2,0.2);
   font-family: 'Ubuntu';

@@ -19,6 +19,38 @@
 	</head>
 
 <body>
+<div id="loader-wrapper">
+<center>
+    <div id="loader">
+        <div id="dna-label" class="js-fade fade-in">It won't be like the first time, right?</div>
+    	<div id="A">&bull;</div>
+    	<div id="T">&bull;</div>
+    	<div id="C">&bull;</div>
+    	<div id="G">&bull;</div>
+    	<div id="A2">&bull;</div>
+    	<div id="T2">&bull;</div>
+    	<div id="C2">&bull;</div>
+    	<div id="G2">&bull;</div>
+    	<div id="A3">&bull;</div>
+    	<div id="T3">&bull;</div>
+    	<div id="C3">&bull;</div>
+    	<div id="G3">&bull;</div>
+    	<div id="A4">&bull;</div>
+    	<div id="T4">&bull;</div>
+    	<div id="C4">&bull;</div>
+    	<div id="G4">&bull;</div>
+    </div>
+
+</center>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+    
+<a href="index.html">       
+	<button class="bk-home">Back</button> 
+</a>  
+ <div id="content">
 	<div>
 		<center>
 			<h1 class="gree" style="font-size: 200px; rgba(2,2,2,0.1);">Hello.</h1>
@@ -54,6 +86,19 @@
 				</a>
 		</div>
 	</div>
+</div>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script>
+	$(document).ready(function() {
+	
+	setTimeout(function(){
+		$('body').addClass('loaded');
+	}, 3000);
+	
+});
+</script>
 	
 </body>
 </html>

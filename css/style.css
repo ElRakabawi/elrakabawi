@@ -1404,3 +1404,238 @@ div.wrapper {
   content: '\e14f'; /* '' */
 }
 
+/* Double-helix preload loader in CSS and javascript */
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#loader {
+    display: block;
+    width: 800px;
+    height: 800px;
+    position: relative;
+    padding-top: 20px;
+    top: 50%;
+    margin-top: 9em;
+    z-index: 1001;
+}
+
+    #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #0f0f0f;
+        z-index: 1000;
+        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(0);  /* IE 9 */
+        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+    /* Loaded */
+    .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(-100%);  /* IE 9 */
+                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(100%);  /* IE 9 */
+                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    
+    .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;  
+                transition: all 0.3s ease-out;
+    }
+    .loaded #loader-wrapper {
+        visibility: hidden;
+
+        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateY(-100%);  /* IE 9 */
+                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.3s 1s ease-out;  
+                transition: all 0.3s 1s ease-out;
+    }
+    
+    /* JavaScript Turned Off */
+    .no-js #loader-wrapper {
+        display: none;
+    }
+    .no-js {
+        color: #222222;
+    }
+
+    #content {
+        margin: 0 auto;
+        padding-bottom: 50px;
+        width: 100%;
+    }  
+
+
+
+#T,#G,#T2,#G2,#A3,#C3,#A4,#C4
+{
+  position: absolute;
+  color: grey;
+}
+#A,#C,#A2,#C2,#T3,#G3,#T4,#G4
+{
+  color:white;
+  position: absolute;
+}
+#A,#T {top:10%}
+#C,#G {top:15%}
+#A2,#T2 {top:20%}
+#C2,#G2 {top:25%}
+#A3,#T3 {top:30%}
+#C3,#G3 {top:35%}
+#A4,#T4 {top:40%}
+#C4,#G4 {top:45%}
+#A5,#T5 {top:50%}
+#C5,#G5 {top:55%}
+#A6,#T6 {top:60%}
+#C6,G6 {top:65%}
+
+
+#A,#A3{
+    -webkit-animation: one 4s infinite;
+    -moz-animation: one 4s infinite;
+  }
+#T,#T3{
+    -webkit-animation: onex 4s 2s infinite;
+    -moz-animation: onex 4s 2s infinite;
+  }
+  
+#C,#C3{
+    -webkit-animation: one 4s 0.5s infinite;
+    -moz-animation: one 4s 0.5s infinite;
+  }
+#G,#G3{
+    -webkit-animation: onex 4s 2.5s infinite;
+    -moz-animation: onex 4s 2.5s infinite;
+  }
+  
+#A2,#A4{
+    -webkit-animation: one 4s 1s infinite;
+    -moz-animation: one 4s 1s infinite;
+  } 
+#T2,#T4{
+    -webkit-animation: onex 4s 3s infinite;
+    -moz-animation: onex 4s 3s infinite;
+  }
+  
+#C2,#C4{
+    -webkit-animation: one 4s 1.5s infinite;
+    -moz-animation: one 4s 1.5s infinite;
+  }
+#G2,#G4{
+    -webkit-animation: onex 4s 3.5s infinite;
+    -moz-animation: onex 4s 3.5s infinite;
+  }
+    
+@-webkit-keyframes one{
+    0%   { left:40%;  z-index: 0; -webkit-transform: scale(1)}
+    25%  { -webkit-transform: scale(2); }
+    50%  { left:60%; z-index: 1; -webkit-transform: scale(1)}
+    75%  { -webkit-transform: scale(0.5); }
+    100% { left:40%;  z-index: 0; -webkit-transform: scale(1)}
+  }
+  
+@-webkit-keyframes onex{
+    0%   { left:40%;  z-index: 1; -webkit-transform: scale(1)}
+    25%  { -webkit-transform: scale(2); }
+    50%  { left:60%; z-index: 0; -webkit-transform: scale(1)}
+    75%  { -webkit-transform: scale(0.5); }
+    100% { left:40%;  z-index: 1; -webkit-transform: scale(1)}
+  }
+  
+@-moz-keyframes one{
+    0%   { left:40%;  z-index: 0; -moz-transform: scale(1)}
+    25%  { -moz-transform: scale(2); }
+    50%  { left:60%; z-index: 1; -moz-transform: scale(1)}
+    75%  { -moz-transform: scale(0.5); }
+    100% { left:40%;  z-index: 0; -moz-transform: scale(1)}
+  }
+  
+@-moz-keyframes onex{
+    0%   { left:40%;  z-index: 1; -moz-transform: scale(1)}
+    25%  { -moz-transform: scale(2); }
+    50%  { left:60%; z-index: 0; -moz-transform: scale(1)}
+    75%  { -moz-transform: scale(0.5); }
+    100% { left:40%;  z-index: 1; -moz-transform: scale(1)}
+  }  
+
+
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fadeIn 2.5s ease-in 1 forwards;
+  animation: fadeIn 2.5s ease-in 1 forwards;
+  opacity: 0;
+}
+
+#dna-label {
+  font-family: 'Raleway';
+  color: #fff;
+  font-size: 18px;
+  display: block;
+  margin-top: 550px;
+  margin-left: 15px;
+}
+
+.bk-home {
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 15px;
+    margin-left: 30px;
+    margin-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #000;
+    color: #000;
+    font-weight: 400;
+    font-family: Ubuntu;
+    font-size: 12px;
+    text-decoration: none;
+    box-shadow: none;
+    background-color: transparent;
+    opacity: 0.9;
+    cursor: pointer;
+    -moz-transition: background ease-in-out 0.3s;
+    -webkit-transition: background ease-in-out 0.3s;
+    -o-transition: background ease-in-out 0.3s;
+    transition: background ease-in-out 0.3s;
+}
+.bk-home:hover {
+  background: #000;
+  color: #fff;
+}
+

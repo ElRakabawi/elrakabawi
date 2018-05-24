@@ -121,12 +121,8 @@ a {
 	body {
 		height: 100%;
 		background-color: #3a3a3a;
-    background: -webkit-linear-gradient(135deg, #2d354f 10%, #3a3a3a 70%);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(135deg, #2d354f 10%, #3a3a3a 70%);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: 500% 500%;
-    -webkit-animation: grad-nav 7s ease infinite;
-    -moz-animation: grad-nav 7s ease infinite;
-    animation: grad-nav 7s ease infinite;
+		background-image: url(images/bg.jpg);
+		background-size: 60%;
 	}
 
 		body:after {
@@ -866,6 +862,7 @@ a {
 		min-height: 100%;
 		padding: 1.5em;
 		z-index: 2;
+		background-color: rgba(0,0,0,0.85);
 	}
 
 		#wrapper > * {
